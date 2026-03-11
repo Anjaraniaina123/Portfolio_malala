@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cv_portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <link rel="stylesheet" href="cv.css">
+</head>
+<body>
+
+    <div class="resume-wrapper">
+        <div class="resume-container">
+            
+            <aside class="sidebar">
+                <div class="profile-section">
+                    <div class="profile-img">
+                        <img src="photo/malalako.jpeg" alt="Claudine Elysée">
+                    </div>
+                    <h1 class="name"> RANDRIARIMALALA Zafindrazay<br>Claudine <br><span>Elysée</span></h1>
+                    <p class="job-title">Développeur Fullstack</p>
+                </div>
+
+                <section class="side-section">
+                    <h2 class="side-title"><i class="fa-solid fa-address-book"></i> Contact & Liens</h2>
+                    <div class="contact-links">
+                        <a href="mailto:hei.elysee@gmail.com" class="social-item">
+                            <i class="fa-solid fa-envelope"></i> <span>hei.elysee@gmail.com</span>
+                        </a>
+                        <a href="https://github.com/Anjaraniaina123" target="_blank" class="social-item github-live">
+                            <i class="fa-brands fa-github"></i> <span>GitHub Live</span>
+                        </a>
+                        <a href="https://facebook.com/tonprofil" target="_blank" class="social-item">
+                            <i class="fa-brands fa-facebook"></i> <span>Facebook</span>
+                        </a>
+                        <a href="https://linkedin.com/in/tonprofil" target="_blank" class="social-item">
+                            <i class="fa-brands fa-linkedin"></i> <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </section>
+
+                <section class="side-section">
+                    <h2 class="side-title"><i class="fa-solid fa-earth-africa"></i> Langues</h2>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Français</span><span class="percent-text">0%</span></div>
+                        <div class="bar"><div class="progress" data-width="30%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Anglais</span><span class="percent-text">0%</span></div>
+                        <div class="bar"><div class="progress" data-width="75%"></div></div>
+                    </div>
+                    <div class="skill-bar-container">
+                        <div class="skill-info"><span>Malagasy</span><span class="percent-text">0%</span></div>
+                        <div class="bar"><div class="progress" data-width="96%"></div></div>
+                    </div>
+                </section>
+            </aside>
+
+            <main class="main-content">
+                
+                <section class="main-section">
+                    <h2 class="main-header"><i class="fa-solid fa-user-tie"></i> Profil Professionnel</h2>
+                    <div class="line"></div>
+                    <p>Étudiante en L1 informatique, passionnée par le développement web, Fullstack, Backend et Frontend. Objectif : concevoir des applications modernes et sécurisées.</p>
+                </section>
+
+                <section class="main-section">
+                    <h2 class="main-header"><i class="fa-solid fa-layer-group"></i> Compétences Techniques</h2>
+                    <div class="line"></div>
+                    <div class="skill-bar-container main-bar">
+                        <div class="skill-info"><span>HTML / CSS / Tailwind</span><span class="percent-text">0%</span></div>
+                        <div class="bar"><div class="progress" data-width="70%"></div></div>
+                    </div>
+                    <div class="skill-bar-container main-bar">
+                        <div class="skill-info"><span>JavaScript</span><span class="percent-text">0%</span></div>
+                        <div class="bar"><div class="progress" data-width="60%"></div></div>
+                    </div>
+                    <div class="skill-bar-container main-bar">
+                        <div class="skill-info"><span>Python / MySQL</span><span class="percent-text">0%</span></div>
+                        <div class="bar"><div class="progress" data-width="30%"></div></div>
+                    </div>
+                </section>
+
+                <section class="main-section">
+                    <h2 class="main-header"><i class="fa-solid fa-graduation-cap"></i> Parcours Académique</h2>
+                    <div class="line"></div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <h3>Licence en Informatique</h3>
+                            <p class="meta">Université : Ecole Manangement D'innovation Et Téchnologie(En cours)</p>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="dot"></div>
+                            <h3>Baccalauréat Série D</h3>
+                            <p class="meta"> Année : 2024-2025  <br>Centre ANTSIRANANA1 <br> Mention : Assez Bien</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="main-section">
+                    <h2 class="main-header"><i class="fa-solid fa-star"></i> Centres d'Intérêt</h2>
+                    <div class="line"></div>
+                    <div class="interests-grid">
+                        <span class="tag"><i class="fa-solid fa-code-branch"></i> Open Source</span>
+                        <span class="tag"><i class="fa-solid fa-shield-halved"></i> Cybersécurité</span>
+                        <span class="tag"><i class="fa-solid fa-gamepad"></i> Gaming</span>
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        
+        gsap.utils.toArray(".skill-bar-container").forEach((container) => {
+            const bar = container.querySelector(".progress");
+            const text = container.querySelector(".percent-text");
+            const target = bar.getAttribute("data-width");
+
+            gsap.timeline({
+                scrollTrigger: {
+                    trigger: container,
+                    start: "top 92%",
+                }
+            })
+            .to(bar, { width: target, duration: 1.5, ease: "power2.out" })
+            .to({val: 0}, {
+                val: parseInt(target),
+                duration: 1.5,
+                onUpdate: function() {
+                    text.innerText = Math.floor(this.targets()[0].val) + "%";
+                }
+            }, "<");
+        });
+
+        
+        gsap.to(".github-live i", { scale: 1.2, repeat: -1, yoyo: true, duration: 0.8 });
+    </script>
+</body>
+</html>
